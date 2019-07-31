@@ -2,6 +2,14 @@
 import os
 import sys
 
+'''
+Workflow:
+1. Create or update a model
+2. Run ./manage.py makemigrations <app_name>
+3. Run ./manage.py migrate to migrate everything or ./manage.py migrate <app_name> to migrate an individual app
+4. Repeat as necessary
+'''
+
 if __name__ == '__main__':
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bitcoin_tracker.settings')
     try:
